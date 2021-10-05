@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="mb-3">
+    <label for="exampleDropdownFormEmail1" class="form-label">Path</label>
+    <input
+      [(ngModel)]="path"
+      type="email"
+      class="form-control"
+      id="exampleDropdownFormEmail1"
+      placeholder="Enter S3 path here"
+    />
+  </div>
+  <button (click)="analyse()" type="button" class="btn btn-primary">
+    Analyse
+  </button>
+  <div>
+    <img
+      src="http://flapboon-ml-data.s3-website-us-east-1.amazonaws.com/clean-floor.jpg"
+    />
+  </div>
+
+  <div class="mt-5" *ngIf="loading">Analysing........</div>
+  <div class="mt-5" *ngIf="!loading">
+    <h5>Results:</h5>
+    Label : {{ label }} <br />
+    Confidence : {{ confidence }}
+  </div>
+</div>
