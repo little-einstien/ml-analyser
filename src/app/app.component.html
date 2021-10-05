@@ -12,10 +12,8 @@
   <button (click)="analyse()" type="button" class="btn btn-primary">
     Analyse
   </button>
-  <div>
-    <img
-      src="http://flapboon-ml-data.s3-website-us-east-1.amazonaws.com/clean-floor.jpg"
-    />
+  <div class="mt-3">
+    <img [src]="path" height="200" />
   </div>
 
   <div class="mt-5" *ngIf="loading">Analysing........</div>

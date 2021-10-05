@@ -25,7 +25,7 @@ export class AppComponent {
             ? 'dirty floor'
             : resp.body.CustomLabels[0].Name;
         this.confidence = resp.body.CustomLabels[0].Confidence;
-        this.path = '';
+        // this.path = '';
         this.loading = false;
       });
   }
