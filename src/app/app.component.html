@@ -1,4 +1,37 @@
 <div class="container">
+  <button
+    (click)="
+      setPath(
+        'http://flapboon-ml-data.s3-website-us-east-1.amazonaws.com/clean-floor.jpg'
+      )
+    "
+    type="button"
+    class="btn btn-primary m-1"
+  >
+    Image 1
+  </button>
+  <button
+    (click)="
+      setPath(
+        'http://flapboon-ml-data.s3-website-us-east-1.amazonaws.com/dirty-floor.jpg'
+      )
+    "
+    type="button"
+    class="btn btn-primary m-1"
+  >
+    Image 2
+  </button>
+  <button
+    (click)="
+      setPath(
+        'http://flapboon-ml-data.s3-website-us-east-1.amazonaws.com/clean-floor2.png'
+      )
+    "
+    type="button"
+    class="btn btn-primary m-1"
+  >
+    Image 3
+  </button>
   <div class="mb-3">
     <label for="exampleDropdownFormEmail1" class="form-label">Path</label>
     <input

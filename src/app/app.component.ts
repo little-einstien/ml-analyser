@@ -29,4 +29,9 @@ export class AppComponent {
         this.loading = false;
       });
   }
+  setPath(p) {
+    this.path = p;
+    this.label = '';
+    this.confidence = '';
+  }
 }
